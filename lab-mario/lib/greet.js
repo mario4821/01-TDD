@@ -1,13 +1,8 @@
 'use strict';
 
-const greet = module.exports = {};
-
-greet.hello = (input) => {
-  if (input === '' || typeof input !== 'string') {
+module.exports = (string) => {
+  if (typeof string !== 'string') {
     return null;
   }
-  if (input === 'world') {
-    return 'hello world';
-  }
-  return `hello ${input}!`;
+  return `hello ${string}!`;
 };

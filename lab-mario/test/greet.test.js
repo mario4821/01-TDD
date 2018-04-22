@@ -2,11 +2,11 @@
 
 const greet = require('../lib/greet');
 
-describe('greet.hello', () => {
+describe('greet.js', () => {
   test('Should return null if not string', () => {
-    expect(greet.hello('')).toBeNull();
+    expect(greet()).toBeNull();
   });
   test('Should return hello world', () => {
-    expect(greet.hello('world')).toEqual('hello world');
+    expect(greet('world')).toEqual('hello world!');
   });
 });
